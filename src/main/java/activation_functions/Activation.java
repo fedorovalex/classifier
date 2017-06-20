@@ -1,7 +1,9 @@
 package activation_functions;
 
+import neurons.Input;
+
 import java.util.List;
 
 public interface Activation {
-    double activation(List<Double> inputs, List<Double> w);
+    double activate(List<Input> inputs);
 }

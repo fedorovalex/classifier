@@ -1,12 +1,13 @@
 package activation_functions.linguistic_variables.different_ports;
 
 import activation_functions.Activation;
+import neurons.Input;
 
 import java.util.List;
 
 public class FewDifferentPorts implements Activation {
-    public double activation(List<Double> inputs, List<Double> w) {
-        double input = inputs.get(0);
+    public double activate(List<Input> inputs) {
+        double input = inputs.get(0).getX();
         return 1/(1 + Math.exp(-3*(input-15)));
     }
 }

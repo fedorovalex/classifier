@@ -1,9 +1,11 @@
 package activation_functions;
 
+import neurons.Input;
+
 import java.util.List;
 
 public class ORActivation implements Activation {
-    public double activation(List<Double> inputs, List<Double> w) {
+    public double activate(List<Input> inputs) {
         return 0;
     }
 }
